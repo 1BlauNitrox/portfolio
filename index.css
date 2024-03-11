@@ -381,6 +381,10 @@ body {
     .landing-page-content-image {
         height: 300px;
     }
+
+    .navigation div div:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -390,10 +394,6 @@ body {
 
     .navigation div div a {
         font-size: 18px;
-    }
-
-    .navigation div div:not(:last-child) {
-        margin-right: 15px;
     }
 }
 
