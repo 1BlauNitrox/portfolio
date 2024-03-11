@@ -11,7 +11,7 @@ $to = "julius.duesseldorf@web.de";
 $user_mail = $_POST['email'];
 $content = $_POST['content'];*/
 $name = "Test User";
-$user_mail = "julius.duesseldorf@web.de";
+$user_mail = "julius@wekaonline.com";
 $content = "jwehdg wehgd weghudwjhedb";
 
 $resend = Resend::client(getenv('EMAIL_KEY'));
