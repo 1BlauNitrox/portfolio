@@ -108,8 +108,15 @@ body {
     font-size: 22px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+    gap: 20px;
     margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
 .nav-about {
@@ -128,17 +135,33 @@ body {
     animation: move-in-right 0.2s ease-in 2.6s backwards;
 }
 
-.navigation div:not(:last-child) {
+.nav-language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-lang {
+    display: flex;
+    animation: move-in-right 0.2s ease-in 2.7s backwards;
+}
+
+.nav-lang svg {
+    height: 30px;
+    width: 30px;
+}
+
+.navigation div div:not(:last-child) {
     margin-right: 30px;
 }
 
-.navigation div a {
+.navigation div div a {
     position: relative;
     text-decoration: none;
     color: #000;
 }
 
-.navigation div a::before {
+.navigation div div a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -149,7 +172,7 @@ body {
     background-color: #000;
 }
 
-.navigation div a:hover::before {
+.navigation div div a:hover::before {
     width: 100%;
 }
 
@@ -330,6 +353,10 @@ body {
     .nav-contact {
         animation: move-in-right 0.2s ease-in 1.6s backwards;
     }
+
+    .nav-lang {
+        animation: move-in-right 0.2s ease-in 1.7s backwards;
+    }
 }
 
 @media screen and (max-width: 800px) { 
@@ -340,21 +367,33 @@ body {
     }
 }
 
-@media screen and (max-width: 555px) { 
-    .navigation div:not(:last-child) {
-        margin-right: 0;
+@media screen and (max-width: 680px) {
+    .navigation div div:not(:last-child) {
+        margin-right: 20px;
     }
+}
 
-    .navigation {
-        justify-content: space-between
-    } 
-
+@media screen and (max-width: 555px) { 
     .landing-page {
         padding: 30px;
     }
 
     .landing-page-content-image {
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navigation {
+        gap: 10px;
+    } 
+
+    .navigation div div a {
+        font-size: 18px;
+    }
+
+    .navigation div div:not(:last-child) {
+        margin-right: 15px;
     }
 }
 
@@ -373,10 +412,23 @@ body {
     }
 }
 
+@media screen and (max-width: 380px) {
+    .navigation div div a {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 370px) {
     .landing-page-content-buttons a {
         font-size: 16px;
         padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav-lang svg {
+        height: 22px;
+        width: 22px;
     }
 }
 
@@ -464,23 +516,23 @@ body {
 .skill {
     width: 100%;
     max-width: 350px;
-    height: 450px;
+    height: 400px;
     background-color: #fff;
     box-shadow: #0000005c 2px 2px 6px 0px;
     padding: 40px;
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
 .skill-image img {
-    height: 60px;
+    height: 90px;
 }
 
 .skill-heading {
-    font-size: 22px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
@@ -922,6 +974,7 @@ body {
 #form-response {
     font-size: 15px;
     margin-top: 10px;
+    width: 100%;
 }
 
 #form-response.form-response-success {
@@ -978,6 +1031,10 @@ body {
     }
 
     .form-submit-container {
+        max-width: 600px;
+    }
+
+    #form-response {
         max-width: 600px;
     }
 }

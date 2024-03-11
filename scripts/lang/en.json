@@ -1,0 +1,22 @@
+{
+    "projectNav": "Work",
+    "contactNav": "Contact",
+    "landingPageHeading": "im building full-stack websites since 2019 focused on creative and responsive frontend designs. Let's build something amazing together!",
+
+    "meStartHeading": "The beginning",
+    "meStartText": "I began my journey in programming in 2018. My initial foray was into Java, motivated by the desire to created our own Minecraft server together with friends. Throughout the initial years, I continuously honed my skills in Java and delved into utilizing technologies such as Git and Maven. As the network development progressed, opportunities arose in web development, including requests for our own website and forum. Eager to broaden my expertise, I delved into both frontend and backend languages. Subsequently, I embarked on a series of projects, progressively expanding my knowledge base.",
+    "meNowHeading": "Nowadays",
+    "meNowText": "In addition to internships within the IT sector, including internships at PwC, ThyssenKrupp Steel, and the New Zealand-based company WekaOnline, I have also contributed to various smaller projects and startups. My most recent engagement is with the Muenster-based startup Scripzy, where I worked as a Frontend Developer, and continue to provide support on select projects. Throughout these experiences, I have honed my specialization in frontend development, significantly expanding my proficiency in JavaScript and CSS. I have particularly focused on enhancing skills related to responsiveness and animations within frontend development.",
+    "meMeHeading": "Thats me",
+    "meMeText": "I'm a person full of energy and enthusiasm, especially when it comes to programming and pursuing my passions. Tennis has been my go-to sport for over ten years, but I'm also a big fan of trying out different activities.<br>I also like to travel a lot. One of my favorite experiences was interning in New Zealand. It wasn't just about work; it was about soaking up every bit of the culture and scenery, and it left me hungry for more adventures.<br>When it comes to working with others, I'm all about collaboration. I'm friendly, always ready to lend a hand, and someone you can rely on. I enjoy working in teams where we can bounce ideas off each other and create something amazing together.",
+
+    "projectsHeading": "Projects",
+    "lyro": "This project is a full-stack Website for a Minecraft Server. This site offered detailed information about the server, its games, team members, and support services. Users could explore game details, connect with the server team, access support resources, and manage their accounts. With features like login, email verification, ticketing system, and user profiles, it was challenging project to enhance my backend skills while providing a vibrant community experience.",
+    "projektkurs": "A school project, happening in my project class, that is all about creating a cool website to show off our group results in a creative way. We've collaborated with a local politician who gave us a lot of input with his opinion, experience and expertise.<br>The website has some neat features like a login system to keep things private. Moreover I used JavaScript APIs like Chart.js to make some fancy animated charts that really bring our data to life. On the one hand this project enhanced my js skills by working with such apis and on the other hand my skills with css and responsiveness.",
+    "scripzy": "In my role as a frontend developer for a German startup, thats one of my latest project: the waitlist website. This site serves as a key component of the pre-launch strategy, encouraging users to sign up for updates on the upcoming products and services. As the frontend developer, I created the entire frontend architecture from scratch, focusing on user-friendly design and captivating animations using HTML, CSS, and JavaScript. This project not only improved my frontend skills, particularly in animation and custom CSS imagery, but also contributed to the startup's growth by attracting and retaining users.",
+    "viewProject": "View Project",
+
+    "contactHeading": "Let's get in touch!",
+    "messageLabel": "Message",
+    "submitText": "Submit"
+}
