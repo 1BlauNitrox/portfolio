@@ -19,12 +19,11 @@ $resend = Resend::client(getenv('EMAIL_KEY'));
 echo getenv("EMAIL_KEY");
 echo "<br>";
 
-
 $resend->emails->send([
-  'from' => $user_mail,
-  'to' => $to,
-  'subject' => 'Kontaktanfrage',
-  'html' => '<p>' . $name . '<br>' . $content . '</p>'
+  'from' => 'Acme <' . $user_mail . '>',
+  'to' => ['julius.duesseldorf@web.de'],
+  'subject' => 'Kontaktanfrage von' . $name,
+  'html' => $content,
 ]);
 exit;
 
