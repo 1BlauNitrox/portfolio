@@ -16,6 +16,10 @@ $content = "jwehdg wehgd weghudwjhedb";
 
 $resend = Resend::client(getenv('EMAIL_KEY'));
 
+echo getenv("EMAIL_KEY");
+echo "<br>";
+
+
 $resend->emails->send([
   'from' => $user_mail,
   'to' => $to,
