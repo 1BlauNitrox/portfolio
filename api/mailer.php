@@ -2,28 +2,32 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-/*if(!isset($_POST['name'], $_POST['email'], $_POST['content'])) {
+if(!isset($_POST['name'], $_POST['email'], $_POST['content'])) {
     header('Location: ../index.html');
     exit;
-}*/
+}
 $to = "julius.duesseldorf@web.de";
-/*$name = $_POST['name'];
+
+
+$name = $_POST['name'];
 $user_mail = $_POST['email'];
-$content = $_POST['content'];*/
-$name = "Test User";
-$user_mail = "julius@wekaonline.com";
-$content = "jwehdg wehgd weghudwjhedb";
+$content = $_POST['content'];
 
 $resend = Resend::client(getenv('EMAIL_KEY'));
 
-echo getenv("EMAIL_KEY");
-echo "<br>";
+
 
 $resend->emails->send([
-  'from' => 'Acme <' . $user_mail . '>',
+  'from' => 'Acme <noreply@1blaunitrox.de>',
   'to' => ['julius.duesseldorf@web.de'],
   'subject' => 'Kontaktanfrage von' . $name,
-  'html' => $content,
+  'html' => $email . " " . $content,
 ]);
+
+function extractDomainEnding($email) {
+  $domain = substr(strrchr($email, "@"), 1);
+  return $domain;
+}
+
 exit;
 
