@@ -17,8 +17,6 @@ function loadLanguage(lang) {
     fetch(`scripts/lang/${lang}.json`)
         .then(response => response.json())
         .then(data => {
-
-
             document.getElementById('project-text').textContent = data.projectNav;
             document.getElementById('contact-text').textContent = data.contactNav;
             document.getElementById('landing-page-text').textContent = data.landingPageHeading
@@ -47,5 +45,4 @@ function loadLanguage(lang) {
         .catch(error => console.error('Error loading language:', error));
 }
 
-// Initial load
 loadLanguage(currentLanguage);
