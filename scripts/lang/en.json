@@ -18,6 +18,6 @@
 
     "contactHeading": "Let's get in touch!",
     "messageLabel": "Message",
-    "agreeTerms": "I hereby agree to the <a href='law/law.html'>Privacy Policy</a>",
+    "agreeTerms": "I hereby agree to the <a href='law.html'>Privacy Policy</a>",
     "submitText": "Submit"
 }
