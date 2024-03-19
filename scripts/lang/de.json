@@ -18,5 +18,6 @@
 
     "contactHeading": "Worauf wartest du!",
     "messageLabel": "Nachricht",
+    "agreeTerms": "Hiermit stimme ich den <a href='law/law.html'>Datenschutzrichtlinien</a> zu",
     "submitText": "Senden"
 }

@@ -2,6 +2,7 @@ const paperPlane = document.getElementById("paperplane");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
+const checkbox = document.getElementById("checkbox");
 const formResponse = document.getElementById("form-response");
 
 function formhash() {
@@ -16,6 +17,11 @@ function formhash() {
     }
 
     if(!validateValue(messageInput, "message")) {
+        error = true;
+    }
+
+    if(!checkbox.checked) {
+        document.getElementsByClassName('checkmark')[0].style.border = "1px solid red";
         error = true;
     }
 
@@ -91,6 +97,7 @@ function sendMail(name, email, content) {
             nameInput.value = "";
             emailInput.value = "";
             messageInput.value = "";
+            checkbox.checked = false;
             return response;
         })
         .then(data => {

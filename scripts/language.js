@@ -38,6 +38,7 @@ function loadLanguage(lang) {
 
             document.getElementById('contact-heading').textContent = data.contactHeading
             document.getElementById('message-label').textContent = data.messageLabel
+            document.getElementById('agree-terms').innerHTML = data.agreeTerms;
             document.getElementById('submit-text').textContent = data.submitText
 
         
