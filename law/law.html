@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+      <title>Portfolio</title>
+
+      <link rel="stylesheet" href="law.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-items">
+                  <li class="nav-item active"><a class="nav-link" onclick="loadText('datenschutz', 0)">Datenschutz</a></li>
+                  <li class="nav-item"><a class="nav-link" onclick="loadText('impressum', 1)">Impressum</a></li>
+                </ul>
+              </nav>
+            <div class="content" id="content">
+                
+            </div>    
+        </div> 
+    </body>
+    <script>
+        const menu = document.querySelector(".nav-items");
+
+        window.addEventListener("load", (event) => {
+            setActiveLink();
+            loadText("datenschutz");
+        });
+
+        menu.addEventListener("mouseover", (event) => {
+        if (event.target.classList.contains("nav-link")) {
+            menu.style.setProperty(
+            "--underline-width",
+            `${event.target.offsetWidth}px`
+            );
+            menu.style.setProperty(
+            "--underline-offset-x",
+            `${event.target.offsetLeft}px`
+            );
+        }
+        });
+        menu.addEventListener("mouseleave", () => {
+            menu.style.setProperty("--underline-width", "0")
+            setActiveLink();
+        });
+
+        function setActiveLink() {
+            var e = document.getElementsByClassName("active")[0];
+            menu.style.setProperty(
+            "--underline-width",
+            `${e.offsetWidth}px`
+            );
+            menu.style.setProperty(
+            "--underline-offset-x",
+            `${e.offsetLeft}px`
+            );
+        }
+    </script>
+    <script>
+        function loadText(type, clickedIndex) {
+            // Remove active class from all nav-items
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Add active class to the clicked nav-item
+            const clickedNavItem = navItems[clickedIndex];
+            if (clickedNavItem) {
+                clickedNavItem.classList.add('active');
+            }
+
+            fetch(`${type}.json`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('content').innerHTML = data.txt;
+            })
+            .catch(error => console.error('Error loading language:', error));
+            }
+    </script>
+</html>
