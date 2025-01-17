@@ -31,8 +31,7 @@ function loadQuestion() {
         return;
     }
     currentQuestion = chooseQuestion();
-    //while(answeredQuesions.includes(currentQuestion.index)) {
-    while(currentQuestion.index != 73) {
+    while(answeredQuesions.includes(currentQuestion.index)) {
         currentQuestion = chooseQuestion();
     }
     counter.innerText = answeredQuesions.length + 1;
