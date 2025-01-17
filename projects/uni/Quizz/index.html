@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="counter">
+        <h2 id="counter"><span id="current-question">0</span>/<span id="questions-size">0</span></h2>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2 id="popup-text">Du hast alle Fragen beantwortet</h2>
+            <h4>Du hast 0 Fragen richtig beantwortet (0%)</h4>
+            <div class="replay-button" onclick="restart()">Nochmal</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="question-container">
+            <h2 id="question">Welche Komplexität beschreibt den Algorithmus der linearen-rekursion zur Berechnung der Fakultät</h2>
+        </div>
+        <div class="answer-container">
+            <div class="row">
+                <div class="answer" onclick="checkAnswer(this)">O(n^2)</div>
+                <div class="answer" onclick="checkAnswer(this)">O(n)</div>
+            </div>
+            <div class="row">
+                <div class="answer" onclick="checkAnswer(this)">O(n-1)</div>
+                <div class="answer" onclick="checkAnswer(this)">O(n+1)</div>
+            </div>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="quizz.js"></script>
+</body>
+</html>
