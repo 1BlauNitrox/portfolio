@@ -2,8 +2,13 @@ let questionElement = document.getElementById("question");
 let answerElements = document.getElementsByClassName("answer");
 let counter = document.getElementById("current-question");
 let popup = document.getElementById("popup");
-let currentQuestion;
 
+let image_container = document.getElementById("image-container");
+let code_question = document.getElementById("img-question");
+let code_img = document.getElementById("code-img");
+let code_popup = document.getElementById("code-popup");
+
+let currentQuestion;
 let answeredQuesions = [];
 let correctAnswers = 0;
 
@@ -12,10 +17,7 @@ let isLoading = false;
 window.onload = function() {
     correctAnswers = 0;
     answeredQuesions = [];
-
     document.getElementById("questions-size").innerText = quizData.length;
-
-    console.log(quizData);
     loadQuestion();
 }
 
@@ -29,7 +31,8 @@ function loadQuestion() {
         return;
     }
     currentQuestion = chooseQuestion();
-    while(answeredQuesions.includes(currentQuestion.index)) {
+    //while(answeredQuesions.includes(currentQuestion.index)) {
+    while(currentQuestion.index != 73) {
         currentQuestion = chooseQuestion();
     }
     counter.innerText = answeredQuesions.length + 1;
@@ -45,7 +48,18 @@ function shuffleArray(array) {
 }
 
 function displayQuestion(currentQuestion) {
-    questionElement.innerText = currentQuestion.question;
+
+    if(currentQuestion.hasOwnProperty('code')) {
+        image_container.style.display = "flex";
+        code_question.innerText = currentQuestion.question;
+        code_img.src = "images/" + currentQuestion.src;
+
+        questionElement.innerText = "";
+    } else {
+        image_container.style.display = "none";
+        questionElement.innerText = currentQuestion.question;
+    }
+
     const shuffledAnswers = shuffleArray([...currentQuestion.answers]);
     for (let i = 0; i < answerElements.length; i++) {
       answerElements[i].innerText = shuffledAnswers[i];

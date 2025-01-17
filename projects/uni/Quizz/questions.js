@@ -770,25 +770,68 @@ const quizData = [
     },
     {
       index: 69,
-      question: "",
+      question: "Was ist das Ergebnis des folgenden Codes?",
+      src: "image-1.png",
+      code: true,
       answers: [
-        "",
-        "",
-        "",
-        "",
+        "3",
+        "2",
+        "Fehler wegen doppelter Deklaration von 'x'",
+        "Es gibt eine Laufzeitfehler wegen falscher Zeigerdereferenzierung"
       ],
-      correctAnswer: ""
+      correctAnswer: "3"
     },
     {
       index: 70,
-      question: "",
+      question: "Gibt es einen Fehler im Code?",
+      src: "image-2.png",
+      code: true,
       answers: [
-        "",
-        "",
-        "",
-        "",
+        "Es fehlt die Initialisierung von 'ptr'",
+        "Der Code ist korrekt",
+        "Es fehlt der Dereferenzierungsoperator",
+        "Es gibt einen Segmentation Fault"
       ],
-      correctAnswer: ""
+      correctAnswer: "Es fehlt die Initialisierung von 'ptr'"
+    },
+    {
+      index: 71,
+      question: "Was gibt der Funktionsaufruf 'myFunction(5)' zurück?",
+      src: "image-3.png",
+      code: true,
+      answers: [
+        "120",
+        "5",
+        "0",
+        "Es gibt einen Stackoverflow-Fehler"
+      ],
+      correctAnswer: "120"      
+    },
+    {
+      index: 72,
+      question: "Was passiert, wenn der Funktionsaufruf 'add(3, 4)' ausgeführt wird?",
+      src: "image-4.png",
+      code: true,
+      answers: [
+        "Die Funktion 'add' für Ganzzahlen wird aufgerufen",
+        "Es gibt einen Fehler, weil Funktionsnamen überladen sind",
+        "Die Funktion 'add' für Fließkommazahlen wird aufgerufen",
+        "Es gibt keinen Unterschied zwischen den beiden Funktionen"
+      ],
+      correctAnswer: "Die Funktion 'add' für Ganzzahlen wird aufgerufen"   
+    },
+    {
+      index: 73,
+      question: "Was wird durch diesen Code ausgegeben?",
+      src: "image-5.png",
+      code: true,
+      answers: [
+        "5",
+        "6",
+        "0",
+        "Fehlerhafte Referenz"
+      ],
+      correctAnswer: "6"
     },
   ];
   
