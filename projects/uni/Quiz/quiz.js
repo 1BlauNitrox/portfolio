@@ -88,7 +88,7 @@ function checkAnswer(answer) {
     }
     answeredQuesions.push(currentQuestion.index);
     isLoading = true;
-    setTimeout(loadQuestion, correct ? 1000 : 3000);
+    setTimeout(loadQuestion, correct ? 1000 : 2000);
 }
 
 function resetColors() {
