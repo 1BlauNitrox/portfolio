@@ -56,7 +56,7 @@ const quizData = [
         "Eine endliche Folge von Schritten, die ein Problem lösen",
         "Eine unendliche Folge von Schritten, die ein Problem nicht lösen"
       ],
-      correctAnswer: ""
+      correctAnswer: "Eine endliche Folge von Schritten, die ein Problem lösen",
     },
     {
       index: 5,
@@ -409,7 +409,7 @@ const quizData = [
         "Abhängig von der Anzahl der Dezimalstellen",
         "Nicht eindeutig",
       ],
-      correctAnswer: "Falsch"      
+      correctAnswer: "Abhängig von der Anzahl der Dezimalstellen"      
     },
     {
       index: 37,
@@ -537,14 +537,14 @@ const quizData = [
     },
     {
       index: 48,
-      question: "",
+      question: "Was passiert, wenn ein Zeiger auf eine nicht initialisierte Variable zeigt?",
       answers: [
-        "",
-        "",
-        "",
-        "",
+        "Es tritt ein Laufzeitfehler auf, weil der Zeiger auf einen undefinierten Speicherbereich zeigt",
+        "Der Zeiger zeigt auf einen zufälligen Wert, aber der Code läuft weiter",
+        "Die Variable wird automatisch mit einem Nullwert initialisiert",
+        "Der Zeiger zeigt auf den Wert 0, aber es entsteht kein Fehler"
       ],
-      correctAnswer: ""
+      correctAnswer: "Es tritt ein Laufzeitfehler auf, weil der Zeiger auf einen undefinierten Speicherbereich zeigt"
     },
     {
       index: 49,
@@ -832,6 +832,297 @@ const quizData = [
         "Fehlerhafte Referenz"
       ],
       correctAnswer: "6"
+    },
+    {
+      index: 74,
+      question: "Was ist der Zweck eines Destruktors?",
+      answers: [
+        "Den Speicher freigeben und aufräumen, wenn ein Objekt zerstört wird",
+        "Ein Objekt zu initialisieren",
+        "Den Zugriff auf private Daten zu ermöglichen",
+        "Eine Funktion zu überschreiben"
+      ],
+      correctAnswer: "Den Speicher freigeben und aufräumen, wenn ein Objekt zerstört wird"      
+    },
+    {
+      index: 75,
+      question: "Welche der folgenden Aussagen über Konstruktoren ist korrekt?",
+      answers: [
+        "Ein Konstruktor hat keinen Rückgabetyp, nicht einmal 'void'",
+        "Ein Konstruktor kann 'void' als Rückgabetyp haben",
+        "Ein Konstruktor muss explizit 'return' aufrufen",
+        "Ein Konstruktor kann nicht überladen werden"
+      ],
+      correctAnswer: "Ein Konstruktor hat keinen Rückgabetyp, nicht einmal 'void'"      
+    },
+    {
+      index: 76,
+      question: "Was passiert, wenn ein Konstruktor nicht definiert wird?",
+      answers: [
+        "Der Compiler erstellt automatisch einen Standardkonstruktor",
+        "Das Programm gibt einen Kompilierungsfehler aus",
+        "Das Objekt kann nicht erstellt werden",
+        "Der Destruktor übernimmt die Initialisierung des Objekts"
+      ],
+      correctAnswer: "Der Compiler erstellt automatisch einen Standardkonstruktor"      
+    },
+    {
+      index: 77,
+      question: "Welche der folgenden Optionen beschreibt einen Copy-Konstruktor korrekt?",
+      answers: [
+        "Ein Konstruktor, der ein neues Objekt aus einem bestehenden Objekt erstellt",
+        "Ein Konstruktor, der keine Parameter hat",
+        "Ein Konstruktor, der automatisch Speicher freigibt",
+        "Ein Konstruktor, der verwendet wird, um Objekte in einer Vererbungshierarchie zu erstellen"
+      ],
+      correctAnswer: "Ein Konstruktor, der ein neues Objekt aus einem bestehenden Objekt erstellt"      
+    },
+    {
+      index: 78,
+      question: "Was ist der Unterschied zwischen privaten und öffentlichen Mitgliedern in einer Klasse?",
+      answers: [
+        "Private Mitglieder sind nur innerhalb der Klasse zugänglich, öffentliche Mitglieder überall",
+        "Private Mitglieder können nicht verwendet werden",
+        "Öffentliche Mitglieder sind nur innerhalb der Klasse zugänglich",
+        "Es gibt keinen Unterschied zwischen privaten und öffentlichen Mitgliedern"
+      ],
+      correctAnswer: "Private Mitglieder sind nur innerhalb der Klasse zugänglich, öffentliche Mitglieder überall"      
+    },
+    {
+      index: 79,
+      question: "Wie nennt man die Beziehung, wenn eine Klasse von einer anderen Klasse erbt?",
+      answers: [
+        "Vererbung",
+        "Kapselung",
+        "Polymorphie",
+        "Abstraktion"
+      ],
+      correctAnswer: "Vererbung"      
+    },
+    {
+      index: 80,
+      question: "Was bedeutet Polymorphie?",
+      answers: [
+        "Ein Objekt oder eine Funktion kann in mehreren Formen auftreten",
+        "Ein Konstruktor ruft mehrere Funktionen auf",
+        "Mehrere Objekte teilen sich denselben Speicher",
+        "Eine Funktion kann nicht überladen werden"
+      ],
+      correctAnswer: "Ein Objekt oder eine Funktion kann in mehreren Formen auftreten"      
+    },
+    {
+      index: 81,
+      question: "Was ist eine reine virtuelle Funktion?",
+      answers: [
+        "Eine Funktion ohne Implementierung in der Basisklasse",
+        "Eine Funktion, die nicht überschrieben werden kann",
+        "Eine Funktion, die nur in der abgeleiteten Klasse verwendet wird",
+        "Eine Funktion, die nur statische Mitglieder verwendet"
+      ],
+      correctAnswer: "Eine Funktion ohne Implementierung in der Basisklasse"         
+    },
+    {
+      index: 82,
+      question: "Was ist ein Vorteil der Verwendung eines Destruktors?",
+      answers: [
+        "Er kann Speicherlecks verhindern",
+        "Er erhöht die Leistung des Programms",
+        "Er initialisiert die Daten der Klasse",
+        "Er ermöglicht Mehrfachvererbung"
+      ],
+      correctAnswer: "Er kann Speicherlecks verhindern"      
+    },
+    {
+      index: 83,
+      question: "Welche Schlüsselwörter werden verwendet, um Vererbung zu implementieren?",
+      answers: [
+        "public, protected, private",
+        "class, object, inherit",
+        "static, dynamic, final",
+        "void, int, inherit"
+      ],
+      correctAnswer: "public, protected, private"
+    },
+    {
+      index: 84,
+      question: "Was bedeutet Mehrfachvererbung?",
+      answers: [
+        "Eine Klasse kann von mehreren Basisklassen erben",
+        "Eine Funktion kann mehrfach überladen werden",
+        "Ein Objekt kann mehrere Methoden enthalten",
+        "Ein Konstruktor wird mehrfach aufgerufen"
+      ],
+      correctAnswer: "Eine Klasse kann von mehreren Basisklassen erben"
+    },
+    {
+      index: 85,
+      question: "Was passiert, wenn ein virtueller Destruktor nicht verwendet wird?",
+      answers: [
+        "Die Destruktoren der abgeleiteten Klassen werden nicht aufgerufen",
+        "Das Programm wird nicht kompiliert",
+        "Die Basisklasse wird nicht zerstört",
+        "Es gibt keinen Unterschied"
+      ],
+      correctAnswer: "Die Destruktoren der abgeleiteten Klassen werden nicht aufgerufen"
+    },
+    {
+      index: 86,
+      question: "Welche der folgenden Klassen ist abstrakt?",
+      answers: [
+        "Eine Klasse mit mindestens einer reinen virtuellen Funktion",
+        "Eine Klasse mit nur öffentlichen Methoden",
+        "Eine Klasse, die keine Konstruktoren hat",
+        "Eine Klasse ohne Mitglieder"
+      ],
+      correctAnswer: "Eine Klasse mit mindestens einer reinen virtuellen Funktion"
+    },
+    {
+      index: 87,
+      question: "Was ist die Rolle des Schlüsselworts virtual?",
+      answers: [
+        "Es ermöglicht das Überschreiben von Funktionen in abgeleiteten Klassen",
+        "Es verhindert die Vererbung",
+        "Es macht die Klasse instanziierbar",
+        "Es deklariert eine konstante Variable"
+      ],
+      correctAnswer: "Es ermöglicht das Überschreiben von Funktionen in abgeleiteten Klassen"
+    },
+    {
+      index: 88,
+      question: "Welches Konzept erlaubt die Laufzeitanpassung einer Funktion?",
+      answers: [
+        "Polymorphie",
+        "Kapselung",
+        "Vererbung",
+        "Templates"
+      ],
+      correctAnswer: "Polymorphie"
+    },
+    {
+      index: 89,
+      question: "Was ist der Zweck eines virtuellen Destruktors?",
+      answers: [
+        "Er sorgt dafür, dass der Destruktor der abgeleiteten Klasse korrekt aufgerufen wird",
+        "Er erlaubt es, Objekte ohne Konstruktor zu erstellen",
+        "Er entfernt die Basisklasse aus der Hierarchie",
+        "Er verbessert die Leistung des Programms"
+      ],
+      correctAnswer: "Er sorgt dafür, dass der Destruktor der abgeleiteten Klasse korrekt aufgerufen wird"      
+    },
+    {
+      index: 90,
+      question: "Was bedeutet Überschreiben (Overriding)?",
+      answers: [
+        "Eine Methode der Basisklasse wird in der abgeleiteten Klasse mit derselben Signatur neu definiert",
+        "Eine Methode wird in derselben Klasse mit verschiedenen Parametern definiert",
+        "Eine Methode wird aus einer Basisklasse entfernt",
+        "Eine Methode wird mehrfach in der gleichen Klasse definiert"
+      ],
+      correctAnswer: "Eine Methode der Basisklasse wird in der abgeleiteten Klasse mit derselben Signatur neu definiert"      
+    },
+    {
+      index: 91,
+      question: "Welche Ausgabe erzeugt dieser Code?",
+      src: "image-6.png",
+      code: true,
+      answers: [
+        "Base constructor, Derived constructor",
+        "Derived constructor, Base constructor",
+        "Base constructor",
+        "Fehler bei der Vererbung"
+      ],
+      correctAnswer: "Base constructor, Derived constructor"
+    },
+    {
+      index: 92,
+      question: "Welche Ausgabe erzeugt dieser Code?",
+      src: "image-7.png",
+      code: true,
+      answers: [
+        "Derived destructor, Base destructor",
+        "Base destructor",
+        "Fehler bei der Zuweisung von 'b'",
+        "Keine Ausgabe"
+      ],
+      correctAnswer: "Derived destructor, Base destructor"
+    },
+    {
+      index: 93,
+      question: "Was wird durch diesen Code ausgegeben?",
+      src: "image-8.png",
+      code: true,
+      answers: [
+        "10",
+        "Fehler wegen Zugriff auf geschützte Variable",
+        "Es gibt keinen Output",
+        "Der Code kompiliert nicht"
+      ],
+      correctAnswer: "10"
+    },
+    {
+      index: 94,
+      question: "Was passiert bei der Ausführung dieses Codes?",
+      src: "image-9.png",
+      code: true,
+      answers: [
+        "Fehler wegen Mehrdeutigkeit",
+        "Es wird 'A' ausgegeben",
+        "Es wird 'B' ausgegeben",
+        "Es wird 'A' und 'B' ausgegeben"
+      ],
+      correctAnswer: "Fehler wegen Mehrdeutigkeit"
+    },
+    {
+      index: 95,
+      question: "Welche Ausgabe erzeugt dieser Code?",
+      src: "image-10.png",
+      code: true,
+      answers: [
+        "Derived destructor, Base destructor",
+        "Base destructor",
+        "Fehler wegen virtuellem Destruktor",
+        "Keine Ausgabe"
+      ],
+      correctAnswer: "Derived destructor, Base destructor"
+    },
+    {
+      index: 96,
+      question: "Welche Ausgabe erzeugt dieser Code?",
+      src: "image-11.png",
+      code: true,
+      answers: [
+        "Drawing Circle, Drawing Square",
+        "Drawing Square, Drawing Circle",
+        "Fehler wegen rein virtueller Funktion",
+        "Keine Ausgabe"
+      ],
+      correctAnswer: "Drawing Circle, Drawing Square"
+    },
+    {
+      index: 97,
+      question: "Welche Ausgabe erzeugt dieser Code?",
+      src: "image-12.png",
+      code: true,
+      answers: [
+        "Class C",
+        "Class A",
+        "Class B",
+        "Fehler wegen Mehrdeutigkeit"
+      ],
+      correctAnswer: "Class C"
+    },
+    {
+      index: 98,
+      question: "Welche Ausgabe erzeugt dieser Code?",
+      src: "image-13.png",
+      code: true,
+      answers: [
+        "Derived class",
+        "Base class",
+        "Fehler wegen virtueller Funktion",
+        "Keine Ausgabe"
+      ],
+      correctAnswer: "Derived class"
     },
   ];
   

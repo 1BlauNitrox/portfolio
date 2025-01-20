@@ -72,26 +72,28 @@ function chooseQuestion() {
 }
 
 function checkAnswer(answer) {
+    let correct = false;
     if(isLoading) return;
     if (answer.innerText !== currentQuestion.correctAnswer) {
         answer.style.backgroundColor = "#dd5353";
     } else {
         correctAnswers++;
+        correct = true;
     }
     
     for(let i = 0; i < answerElements.length; i++) {
         if (answerElements[i].innerText === currentQuestion.correctAnswer) {
-            answerElements[i].style.backgroundColor = "#96db70";
+            answerElements[i].style.backgroundColor = "#8cd564";
         }
     }
     answeredQuesions.push(currentQuestion.index);
     isLoading = true;
-    setTimeout(loadQuestion, 1000);
+    setTimeout(loadQuestion, correct ? 1000 : 3000);
 }
 
 function resetColors() {
     for(let i = 0; i < answerElements.length; i++) {
-        answerElements[i].style.backgroundColor = "#fff";
+        answerElements[i].style.backgroundColor = "#f0faff42";
     }
 }
 
