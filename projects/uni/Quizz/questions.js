@@ -346,7 +346,7 @@ const quizData = [
     },
     {
       index: 31,
-      question: "Wie bildet man das Zweierkomplement eines Binärzahl?",
+      question: "Wie bildet man das Zweierkomplement einer Binärzahl?",
       answers: [
         "Man negiert alle Bits und addiert 1",
         "Man subtrahiert 1 von der Binärzahl",
