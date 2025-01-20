@@ -83,9 +83,8 @@ body {
 .answer {
     cursor: pointer;
     width: 50%;
-    /**background: linear-gradient(to right bottom, #f0faff42, #ffffff24);**/
-    /**background-image: linear-gradient(to right bottom, #574999, #6278ac);**/
-    background-color: #fff;
+    background: linear-gradient(to right bottom, #f0faff42, #ffffff24);
+    color: #fff;
     height: 100px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
