@@ -17,6 +17,19 @@
     "scripzy": "In my role as a frontend developer for a German startup, thats one of my latest project: the waitlist website. This site serves as a key component of the pre-launch strategy, encouraging users to sign up for updates on the upcoming products and services. As the frontend developer, I created the entire frontend architecture from scratch, focusing on user-friendly design and captivating animations using HTML, CSS, and JavaScript. This project not only improved my frontend skills, particularly in animation and custom CSS imagery, but also contributed to the startup's growth by attracting and retaining users.",
     "viewProject": "View Project",
 
+
+    "frontend": "Responsive web design using HTML5, CSS, and JavaScript",
+    "backend": "Secure and high-performance web backends with Node.js or PHP, Wordpress",
+    "sql": "Management, design, and optimization of relational databases",
+    "java": "From fundamentals and asynchronous programming to developing custom REST APIs",
+    "buildtools": "Automation of build processes using Maven and CMake",
+    "c": "Implementation of small projects as part of university coursework",
+    "git": "Use of Git and GitHub, including knowledge of automation with CI/CD",
+    "linux": "Fundamentals of network, server, and web security, as well as social engineering",
+    "vibeCoding": "Working more efficiently and effectively through smart and ethical use of AI assistants",
+
+
+
     "contactHeading": "Let's get in touch!",
     "messageLabel": "Message",
     "agreeTerms": "I hereby agree to the <a href='law.html'>Privacy Policy</a>",

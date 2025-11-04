@@ -36,6 +36,17 @@ function loadLanguage(lang) {
             document.getElementById('view-project-2').textContent = data.viewProject
             document.getElementById('view-project-3').textContent = data.viewProject
 
+            document.getElementById('frontend').textContent = data.frontend
+            document.getElementById('backend').textContent = data.backend
+            document.getElementById('sql').textContent = data.sql
+            document.getElementById('java').textContent = data.java
+            document.getElementById('buildtools').textContent = data.buildtools
+            document.getElementById('c').textContent = data.c
+            document.getElementById('git').textContent = data.git
+            document.getElementById('linux').textContent = data.linux
+            document.getElementById('vibeCoding').textContent = data.vibeCoding
+
+            
             document.getElementById('contact-heading').textContent = data.contactHeading
             document.getElementById('message-label').textContent = data.messageLabel
             document.getElementById('agree-terms').innerHTML = data.agreeTerms;

@@ -17,6 +17,18 @@
     "scripzy": "In meiner Rolle als Frontend-Entwickler für ein deutsches Startup war eines meiner neuesten Projekte die Wartelisten-Website. Diese Seite dient als Schlüsselelement der Pre-Launch-Strategie und ermutigt Benutzer dazu, sich für Updates zu den bevorstehenden Produkten und Dienstleistungen anzumelden. Als Frontend-Entwickler habe ich die gesamte Frontend-Architektur von Grund auf neu erstellt und mich dabei auf benutzerfreundliches Design und fesselnde Animationen mit HTML, CSS und JavaScript konzentriert. Dieses Projekt hat nicht nur meine Frontend-Fähigkeiten verbessert, insbesondere in Animationen und custom CSS-Bildern, sondern auch zum Wachstum des Startups beigetragen, indem es Benutzer angezogen und gehalten hat.",
     "viewProject": "Zum Projekt",
 
+
+    "frontend": "Responsive Webdesign mit HTML5, CSS und JS",
+    "backend": "Sichere und performante Webbackends mit Node.js oder PHP, Wordpress",
+    "sql": "Verwaltung, Design und Optimierung von Rationalen Datenbanken",
+    "java": "Von Grundlagen über Asynchrones-Programmieren bis zum erstellen eigener Rest-APIs",
+    "buildtools": "Automatisierung von Build-Prozessen mit Maven und CMake",
+    "c": "Umsetzung kleinerer Projekte im Rahmen von universitären Aufgaben",
+    "git": "Verwendung von git und Github, sowie Kenntnis über Automatisierung mit CI/CD",
+    "linux": "Grundlagen der Netzwerk-, Server- und Websicherheit sowie des Social-Engineerings",
+    "vibeCoding": "Effizientere und schnellere Arbeit mit schlauer und ethischer Nutzung von AI-Assistenten",
+
+
     "contactHeading": "Worauf wartest du!",
     "messageLabel": "Nachricht",
     "agreeTerms": "Hiermit stimme ich den <a href='law.html'>Datenschutzrichtlinien</a> zu",
